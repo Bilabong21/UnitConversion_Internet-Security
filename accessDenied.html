@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Access Denied Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Access Denied</h1>
+        <%
+           session.invalidate();
+        %>
+        <p>
+            You are not allowed to access the requested resource.<br>
+            Please click <a href="index.html">here</a> to go back.
+        </p>
+    </body>
+</html>
